@@ -11,4 +11,6 @@ app.get("/checking", (req, res) => {
   res.send("This is Checking Route");
 });
 
+app.get("/second", (req, res) => res.send("this is second Route"));
+
 app.listen(PORT, () => console.log(`Sever is running in ${PORT}`));
