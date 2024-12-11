@@ -4,11 +4,11 @@ const app = express();
 const PORT = 3006;
 
 app.get("/", (req, res) => {
-  res.send("Khud say change karo");
+  res.send("Great Work! you near to get Success");
 });
 
-app.get("/checking", (req, res) => {
-  res.send("This is Checking Route");
+app.get("/health", (req, res) => {
+  res.status(200).json({ message: "Everything going good!" });
 });
 
 app.get("/second", (req, res) => res.send("this is second Route"));
