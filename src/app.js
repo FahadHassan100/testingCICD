@@ -11,6 +11,10 @@ app.get("/health", (req, res) => {
   res.status(200).json({ message: "Everything going good!" });
 });
 
+app.get("/Checking", (req, res) => {
+  res.status(200).json({ message: "This is checking Route" });
+});
+
 app.get("/second", (req, res) => res.send("this is second Route"));
 
 app.listen(PORT, () => console.log(`Sever is running in ${PORT}`));
