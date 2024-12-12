@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-  res.status(200).json({ message: "Everything going good! v4" });
+  res.status(200).json({ message: "Everything going good! v5" });
 });
 
 app.get("/second", (req, res) => res.send("this is second Route"));
