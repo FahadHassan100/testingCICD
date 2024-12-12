@@ -48,4 +48,4 @@ jobs:
             docker pull ${{ secrets.AWS_ECR_URL }}:latest
             docker stop nextjs-container || true
             docker rm nextjs-container || true
-            docker run -d -p 8080:3000 --name nextjs-container ${{ secrets.AWS_ECR_URL }}:latest
+            docker run -d -p 3006:3006 --name nextjs-container ${{ secrets.AWS_ECR_URL }}:latest
